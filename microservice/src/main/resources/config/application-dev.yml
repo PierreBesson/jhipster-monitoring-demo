@@ -61,6 +61,12 @@ spring:
         cache-seconds: 1
     thymeleaf:
         cache: false
+    zipkin: # Use the "zipkin" Maven profile to have the Spring Cloud Zipkin dependencies
+        base-url: http://localhost:9411
+        enabled: true
+        locator:
+            discovery:
+                enabled: true
 
 liquibase:
     contexts: dev
@@ -131,6 +137,7 @@ jhipster:
             enabled: true
             # edit spring.metrics.export.delay-millis to set report frequency
 spring.metrics.export.delay-millis: 30000
+
 # ===================================================================
 # Application specific properties
 # Add your own application properties here, see the ApplicationProperties class
