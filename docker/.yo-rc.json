@@ -1,0 +1,13 @@
+{
+  "generator-jhipster": {
+    "appsFolders": [
+      "gateway",
+      "microservice"
+    ],
+    "directoryPath": "../",
+    "monitoring": "elk",
+    "serviceDiscoveryType": "eureka",
+    "adminPassword": "admin",
+    "jwtSecretKey": "d7adb845ead69a63e3261fc6def38dfd50f13d56"
+  }
+}
